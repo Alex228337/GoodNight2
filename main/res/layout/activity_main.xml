@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mfon"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/minigame"
+        android:layout_width="296dp"
+        android:layout_height="296dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="finishGame"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/alarm_button"
+        android:layout_width="323dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:text="Установить будильник"
+        android:textColor="#E1BEE7"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#750A0A" />
+
+    <ImageView
+        android:id="@+id/monSleep"
+        android:layout_width="370dp"
+        android:layout_height="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/relax" />
+
+    <Button
+        android:id="@+id/inf"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/ibtn"
+        app:layout_constraintEnd_toStartOf="@+id/lbtn"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/monSleep"
+        app:layout_constraintTop_toTopOf="@+id/monSleep"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/lbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A340B5"
+        android:text="Совет дня"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/monSleep"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="@+id/monSleep"
+        app:layout_constraintTop_toTopOf="@+id/monSleep"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/stbtn"
+        android:layout_width="61dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/statbtn"
+        android:onClick="displayToast"
+        app:layout_constraintEnd_toStartOf="@+id/lbtn"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/inf"
+        app:layout_constraintTop_toTopOf="@+id/monSleep"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
